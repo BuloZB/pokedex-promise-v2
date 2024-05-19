@@ -27,7 +27,7 @@
   "homepage": "https://github.com/PokeAPI/pokedex-promise-v2#readme",
   "dependencies": {
     "async": "^2.0.0-rc.6",
-    "memory-cache": "^0.1.6",
+    "memory-cache": "^0.2.0",
     "request-promise": "^2.0.0"
   },
   "devDependencies": {
