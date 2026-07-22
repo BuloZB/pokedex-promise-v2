@@ -44,8 +44,10 @@ async function getJSON<T>(
 
     // Cache the object in memory-cache
     // only if cacheLimit > 0
+    // node-cache's ttl is in seconds, but cacheLimit is documented
+    // (and defaulted) in milliseconds, so convert here
     if (values.cacheLimit > 0) {
-      values.cache.set<T>(url, responseData, values.cacheLimit);
+      values.cache.set<T>(url, responseData, values.cacheLimit / 1000);
     }
 
     // If a callback is present
