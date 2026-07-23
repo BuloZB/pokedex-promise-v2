@@ -60,7 +60,7 @@ class PokeAPIOptions {
       this.versionPath = config.versionPath;
     }
     if (config.offset) {
-      this.offset = config.offset - 1;
+      this.offset = config.offset;
     }
     if (config.limit) {
       this.limit = config.limit;
